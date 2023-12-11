@@ -1,23 +1,39 @@
 #!/bin/bash
 
-CONT=1;
-while [ $CONT == 1 ]
-do
-	A=1
+settings ()
+{
 	echo "Choose integer of which to print table:"
-	read NB
+	read $1
 	echo "Choose n value until which to print the table:"
-	read OP
-	while [ $A -le $OP ]
+	read $2
+	echo ' '
+}
+
+table ()
+{
+	for ((i=1; i<=$2; i++))
 	do
-		echo "$NB x $A = " `expr $NB \* $A`
-		A=`expr $A + 1`
+		echo "$1 x $i =" `expr $1 \* $i`
 	done
-	echo -e '\n'
+
+}
+
+continuance ()
+{
+	echo ' '
 	echo "Continue with another table?" 
 	echo "1: Continue" 
 	echo "0: End" 
-	read CONT
+	read $1
+	clear
+}
+
+CONT=1;
+while [ $CONT == 1 ]
+do
+	settings NB OP
+	table $NB $OP
+	continuance CONT
 done
 
 clear
