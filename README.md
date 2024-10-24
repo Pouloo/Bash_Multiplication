@@ -8,14 +8,15 @@
 - [ ] Bourne Shell
 - [ ] Powershell
 
-## Techincal requirements
+## Technical requirements
 - A working computer!
 - Your command line interpreter of choice.
 - A proper text editor (In case you want to contribute).
 Some suggested editors are VScode, Notepad++ and Sublime.
+- A need for basic multiplication exercices.
 
 ## Description
-This project is a implementation of my previously made multiplication table generator, this time as a BASH script. It allows users to input the 'n'th integer up which to print a multiplication table in your command line.
+This project is a implementation of my previously made multiplication table generator, this time as a BASH script. It allows users to input the `n`th integer up which to print a multiplication table in your command line.
 
 ## Contributing
 If you'd like to contribute to this project, please follow these guidelines:
